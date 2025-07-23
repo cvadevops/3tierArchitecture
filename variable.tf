@@ -43,7 +43,7 @@ variable "instance_type_app" {
 variable "db_instance_type" {
   description = "RDS DB instance type."
   type        = string
-  default     = "db.t2.micro"
+  default     = "db.t4g.micro"
 }
 variable "db_name" {
   description = "Name of the database."

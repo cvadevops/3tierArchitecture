@@ -1,12 +1,12 @@
 
 #!/bin/bash
-# user_data_web.sh
-# This script runs on the web server instance at launch.
+# user_data_app.sh
+# This script runs on the app server instance at launch.
 
 # Update package lists
 sudo yum update -y
 
-# Install Nginx (example web server)
+# Install Nginx (example app server)
 sudo amazon-linux-extras install nginx1 -y
 sudo systemctl start nginx
 sudo systemctl enable nginx

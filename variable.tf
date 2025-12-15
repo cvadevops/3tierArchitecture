@@ -28,17 +28,17 @@ variable "private_db_subnet_cidr" {
 variable "ami_id" {
   description = "The AMI ID for the EC2 instances (e.g., Amazon Linux 2)."
   type        = string
-  default     = "ami-0150ccaf51ab55a51" # Example: Amazon Linux 2 AMI (us-east-1) - please update to a recent one
+  default     = "ami-068c0051b15cdb816" # Example: Amazon Linux 2 AMI (us-east-1) - please update to a recent one
 }
 variable "instance_type_web" {
   description = "EC2 instance type for web servers."
   type        = string
-  default     = "t2.micro"
+  default     = "t3.micro"
 }
 variable "instance_type_app" {
   description = "EC2 instance type for application servers."
   type        = string
-  default     = "t2.micro"
+  default     = "t3.micro"
 }
 variable "db_instance_type" {
   description = "RDS DB instance type."
